@@ -2,13 +2,21 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import "materialize";
 
 $background-image: "https://static.pexels.com/photos/168414/pexels-photo-168414.jpeg";
 
 body {
-  background: url($background-image) no-repeat center 70% fixed;
+  background: url($background-image) no-repeat center 75% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0px;
+}
+
+.modal-trigger {
+  position: fixed;
+  height: 100%;
+  width: 100%;
 }
