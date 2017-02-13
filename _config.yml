@@ -16,10 +16,13 @@
 title: Blackdoor
 email: info@itsthespectaculars.com
 description: > # this means to ignore newlines until "baseurl:"
-  A sex positive community where safety is first.
+  A sex positive community where safety comes first.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://myblackdoor.com" # the base hostname & protocol for your site, e.g. http://example.com
+image: "http://myblackdoor.com/assets/blackdoor.jpg"
 google_analytics: UA-91515001-1
+facebook_app: 258921714538599
+twitter_handle: @myblackdoor
 
 # Build settings
 markdown: kramdown
