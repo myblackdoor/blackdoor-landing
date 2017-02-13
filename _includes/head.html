@@ -9,17 +9,17 @@
   <!-- Twitter Card data -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="{{ site.twitter_handle }}">
-  <meta name="twitter:title" content="{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 | escape }}">
   <meta name="twitter:creator" content="{{ site.twitter_handle }}">
   <!-- Twitter Summary card images must be at least 120x120px -->
-  <meta name="twitter:image" content="{% if page.image %} {{ page.image }} {% else %} {{ site.image }} {% endif %}">
+  <meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}" />
-  <meta property="og:type" content="{% if page.title %} article {% else %} website {% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
+  <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
-  <meta property="og:image" content="{% if page.image %} {{ page.image }} {% else %} {{ site.image }} {% endif %}" />
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{site.image}}{% endif %}" />
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="fb:admins" content="{{ site.facebook_app }}" />

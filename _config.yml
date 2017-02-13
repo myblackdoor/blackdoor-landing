@@ -22,7 +22,7 @@ url: "http://myblackdoor.com" # the base hostname & protocol for your site, e.g.
 image: "http://myblackdoor.com/assets/blackdoor.jpg"
 google_analytics: UA-91515001-1
 facebook_app: 258921714538599
-twitter_handle: @myblackdoor
+twitter_handle: "@myblackdoor"
 
 # Build settings
 markdown: kramdown
