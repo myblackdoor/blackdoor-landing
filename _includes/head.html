@@ -16,13 +16,13 @@
   <meta name="twitter:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}">
 
   <!-- Open Graph data -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{site.title}}{% endif %}" />
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}" />
-  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{site.image}}{% endif %}" />
+  <meta property="og:image" content="{% if page.image %}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
-  <meta property="fb:admins" content="{{ site.facebook_app }}" />
+  <meta property="fb:app_id" content="{{ site.facebook_app }}" />
 
   <!--Import Google Icon Font-->
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
