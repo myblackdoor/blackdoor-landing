@@ -8,11 +8,7 @@ function typeform(id, formId) {
   });
 };
 
-function initTypeform(formId) {
-  typeform("typeform-full", formId).appendTo("#typeform-container");
-  $.getScript("https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js");
-}
-
 $(document).ready(function(){
-  initTypeform("jfPC2R");
+  typeform("typeform-full", "jfPC2R")
+    .appendTo("#typeform-container");
 });
